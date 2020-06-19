@@ -6,7 +6,7 @@
 #Rails knows that id is required so it is common not to type it here.
 #I left it in so that I would understand
 <% @portfolio_items.each do |portfolio_items| %>
-  <p><%= link_to portfolio_items.title, portfolio_path(portfolio_items.id) %></p> 
+  <p><%= link_to portfolio_items.title, portfolio_show_path(portfolio_items.id) %></p> 
                                                                                   
   <p><%= portfolio_items.subtitle %></p>
   <p><%= portfolio_items.body %></p>
